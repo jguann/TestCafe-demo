@@ -8,8 +8,8 @@ fixture`Test`
 
 
 test('ChangeTextAndTextarea', async t=>  {
-    const inputText = "Lorem ipsum";
-    const inputTextarea = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+    const inputText = "Hello";
+    const inputTextarea = "Lorem ipsum";
 
     await samplePage.runProject();
     await samplePage.fillText(inputText);
