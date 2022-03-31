@@ -31,6 +31,9 @@ class SamplePage {
 
     async fillTextarea(inputTextarea) {
         await t.typeText(this.inputTextarea, inputTextarea);
+
+        // Must dispatch change event manually
+        await t.dispatchEvent(this.inputTextarea, 'change');
     }
 
     async copyAndPasteText() {
